@@ -24,5 +24,4 @@ ggplot(mtcars, aes(wt, mpg)) +
     labs(title = "My Plot") +
     theme_blog(text = element_text(size = 20))
 }
-
 }

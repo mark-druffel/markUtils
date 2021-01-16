@@ -4,6 +4,7 @@
 #'
 #' @details Themes all tweak existing themes but accept any ggplot2 theme arguments to overwrite settings
 #'
+#'
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
@@ -13,7 +14,7 @@
 #'     labs(title = "My Plot") +
 #'     theme_blog(text = element_text(size = 20))
 #'}
-#'
+#' @import ggplot2
 #' @export
 
 theme_blog <- function(...){
