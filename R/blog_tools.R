@@ -56,12 +56,23 @@ theme_blog <- function(...){
     ggplot2::theme(...)
 }
 
+
+#' Add header using css styles
+#'
+#' @param title
+#' @param subtitle
+#'
+#' @import htmltools
+#' @import rlang
+#' @export
+
 viz_header <- function(title, subtitle, tclass, sclass){
   if(missing(subtitle)){
-    div(class = rlang::maybe_missing(sclass, default = "viz-subtitle"), title)
+    htmltools::div(class = rlang::maybe_missing(sclass, default = "viz-subtitle"), title)
   } else{
-    div(class = rlang::maybe_missing(sclass, default = "viz-subtitle"),
-        div(class = rlang::maybe_missing(sclass, default = "viz-title"), title),
+    htmltools::div(class = rlang::maybe_missing(sclass, default = "viz-subtitle"),
+        htmltools::div(class = rlang::maybe_missing(sclass, default = "viz-title"), title),
         subtitle)
   }
 }
+
