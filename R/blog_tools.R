@@ -82,6 +82,7 @@ theme_blog <- function(...){
 viz_header <- function(viz, title, subtitle, tclass, sclass){
   htmltools::div(htmltools::div(class = rlang::maybe_missing(sclass, default = "viz-subtitle"),
                  htmltools::div(class = rlang::maybe_missing(sclass, default = "viz-title"), title),
-                 subtitle), viz)
+                 subtitle))
+  viz
 }
 
