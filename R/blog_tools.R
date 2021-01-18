@@ -19,8 +19,7 @@
 #' @export
 
 theme_blog <- function(...){
-  options(warn = - 1)
-  options(message = -1)
+  options(warn = - 1, message = -1, echo = F)
   extrafont::loadfonts()
   ggplot2::theme_minimal() +
   ggplot2::theme(
