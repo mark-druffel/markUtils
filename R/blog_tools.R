@@ -19,7 +19,9 @@
 #' @export
 
 theme_blog <- function(...){
-  suppressMessages(extrafont::loadfonts())
+  options(warn = - 1)
+  options(message = -1)
+  extrafont::loadfonts()
   ggplot2::theme_minimal() +
   ggplot2::theme(
       text = ggplot2::element_text(
