@@ -118,7 +118,6 @@ theme_blog_facet <- function(...){
         color = "#33334D",
         size = 14,
         hjust = 0),
-      panel.grid = ggplot2::element_blank(),
       plot.background = ggplot2::element_rect(
         fill = "#ffffff",
         color = "#ffffff"),
@@ -126,13 +125,7 @@ theme_blog_facet <- function(...){
         t = 0,
         r = 0,
         b = 0,
-        l = 0),
-      panel.border = ggplot2::element_blank(),
-      strip.background = ggplot2::element_blank(),
-      panel.background = ggplot2::element_rect(fill = "#ffffff",
-                                               color = "#ffffff"),
-      legend.background = ggplot2::element_rect(fill = "#ffffff",
-                                                color = "#ffffff")
+        l = 0)
     ) +
     ggplot2::theme(...)
 }
