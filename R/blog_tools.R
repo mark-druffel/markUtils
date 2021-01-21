@@ -19,8 +19,6 @@
 #' @export
 
 theme_blog <- function(...){
-  options(warn = - 1, message = -1, echo = F)
-  extrafont::loadfonts()
   ggplot2::theme_minimal() +
   ggplot2::theme(
       text = ggplot2::element_text(
@@ -89,8 +87,6 @@ theme_blog <- function(...){
 #' @export
 
 theme_blog_facet <- function(...){
-  options(warn = - 1, message = -1, echo = F)
-  extrafont::loadfonts()
   ggplot2::theme_light() +
     ggplot2::theme(
       text = ggplot2::element_text(
